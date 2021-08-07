@@ -1,9 +1,30 @@
-# Uses python3
-def calc_fib(n):
-    if (n <= 1):
+# python3
+
+
+def fibonacci_number_naive(n):
+    assert 0 <= n <= 45
+
+    if n <= 1:
         return n
 
-    return calc_fib(n - 1) + calc_fib(n - 2)
+    return fibonacci_number_naive(n - 1) + fibonacci_number_naive(n - 2)
 
-n = int(input())
-print(calc_fib(n))
+
+def fibonacci_number(n):
+    assert 0 <= n <= 45
+    result = [0] * (n+1)
+    # print(result)
+    if n >= 1:
+        result[1] = 1
+    if n > 1:
+        # print(result)
+        for i in range(2, n+1):
+            # print(i)
+            result[i] = result[i-1] + result[i-2]
+    # print(result)
+    return result[-1]
+
+
+if __name__ == '__main__':
+    input_n = int(input())
+    print(fibonacci_number(input_n))
