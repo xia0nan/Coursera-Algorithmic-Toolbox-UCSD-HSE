@@ -22,3 +22,6 @@ Or use Repl - https://replit.com/
 **Note:**
 
 Pycharm education has built-in course for this specialization 
+
+## Other's work
+- https://github.com/MaxPoon/Data-Structure-and-Algorithms/tree/master/coursera-Data-Structures-and-Algorithms-specialization
